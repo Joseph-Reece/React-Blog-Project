@@ -1,0 +1,28 @@
+import React from 'react'
+import {categoryColors} from './styles'
+
+const MasonryPost = ({ post, tagsOnTop }) => {
+    const imageBackground={backgroundImage:`url("${require(`../../assets/images/${post.image}`).default}")`}
+
+    const style = {...imageBackground, ...post.style}
+
+    return (
+        <a className="masonry-post overlay" style={style} href={post.link}>
+            <div className="image-text">
+                <div className="tags-container">
+                    {post.categories.map((tag, ind) => 
+                        <span className="tag" key={ind} style={{backgroundColor: categoryColors[tag]}} >
+                            {tag.toUpperCase()}
+                        </span>
+                    )}
+                </div>
+               <div>
+                    <h2 className="image-title">{post.title}</h2>
+                    <span className="image-date">{post.date}</span>
+               </div>
+            </div>
+        </a>
+    )
+}
+
+export default MasonryPost
