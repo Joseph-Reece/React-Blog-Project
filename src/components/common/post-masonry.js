@@ -1,5 +1,5 @@
 import React from 'react'
-import {MasonryPost}  from './'
+import MasonryPost from './masonry-post'
 
 const PostMasonry = ({ posts, columns, tagsOnTop }) => {
     return (

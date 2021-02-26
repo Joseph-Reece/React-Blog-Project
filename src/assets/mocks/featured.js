@@ -30,11 +30,11 @@ export default [
         link: '#',
         image: 'programmerSVG.svg'
     },
-    {
-        title: 'Journey to mass',
-        date: moment().format('MMM, DD, YYY'),
-        categories: ['Tech culture', 'Space exploration'],
-        link: '#',
-        image: 'programmerSVG.svg'
-    },
+    // {
+    //     title: 'Journey to mass',
+    //     date: moment().format('MMM, DD, YYY'),
+    //     categories: ['Tech culture', 'Space exploration'],
+    //     link: '#',
+    //     image: 'programmerSVG.svg'
+    // },
 ]

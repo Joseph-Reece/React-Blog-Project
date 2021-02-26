@@ -10,7 +10,7 @@ export default [
         image: 'money.jpg'
     },
     {
-        title: 'How does it feel ion a vintage car',
+        title: 'How does it feel in a vintage car',
         date: moment().format('MMM, DD, YYYY'),
         categories: ['Tech culture', 'Cars'],
         link: '#',
